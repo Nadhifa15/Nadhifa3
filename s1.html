@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranger Things Season 1</title>
+    <style>
+        * {margin: 0; padding: 0; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+        .container {width: 100%; height: 100%; background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(sts1.jpg); background-position: center; background-size: 85%; background-attachment: fixed;}
+        header {position: fixed; width: 100%; height: 100px; background: #471b1780; border-bottom: 2px solid #3750a1; color: white; display: flex; align-items: center; justify-content: space-between; z-index: 1;}
+        .judul {width: 50%;}
+        .judul h1 {margin-left: 90px; color: red; font-size: 50px; letter-spacing: 2px;}
+        .menu {display: contents;}
+        ul {width: 60%;}
+        ul li {display: inline-block; margin-left: 4%; transition: all 0.5s ease; text-align: center; cursor: pointer; padding: 1%; height: 50px; overflow: hidden;}
+        ul li:hover {height: 85px;}
+        ul li a {text-decoration: none; font-size: 18px; color: white; text-shadow: 0 0 5px black;}
+        ul li a:active, :focus {text-decoration: underline; color: #a4342a;}
+        ul li span {display: block; text-align: center;}
+        ul li span img {width: 50px; border: 2px solid red;}
+        .subjudul {color: rgb(182, 182, 182); text-align: center; text-shadow: 0 0 5px black;}
+        .isi {width: 85%; text-align: justify; margin: auto;}
+        .isi p {color: rgb(182, 182, 182); letter-spacing: 1px;}
+
+        /*Dropdown Menu*/
+        .icon img {cursor: pointer; display: none;}
+        .dropdown-menu {position: absolute; right: 2rem; top: 90px; height: 0; width: 300px; background: rgba(0, 0, 0, 0.3); border-radius: 15px; backdrop-filter: blur(5px); overflow: hidden; transition: height 2s;}
+        .dropdown-menu.open {height: 330px;}
+        .dropdown-menu li {padding: 10px; display: flex; align-items: center; justify-content: center;}
+        .dropdown-menu li a {color: white; text-decoration: none; letter-spacing: 1px;}
+        .dropdown-menu li a:hover {color: red; text-decoration: underline;}
+        .dropdown-menu li span img {border-radius: 5px; width: 40px; margin-right: 20px; border: 1px solid red;}
+
+        /*Hover Pict*/
+        #sts1 .foto img {width: 250px; transition: 1s;}
+        #sts1 .foto {margin-left: auto; margin-right: auto; width: 250px; height: 250px; border: 6px double #892724; border-radius: 0% 15%; padding: 30px;}
+        #sts1 .foto img:hover {border-radius: 0% 13%; transform: scale(1.2); transition: 1s;}
+    
+        @media (max-width:1000px) {
+            .menu {display: none;}
+            .icon img {display: block;}
+            .dropdown-menu {display: block;}
+            #sts1 .foto {border-radius: 15%;}
+            #sts1 .foto img {transition: 1; border-radius: 0;}
+            #sts1 .foto img:hover {border-radius: 13%;}
+        }
+        @media (max-width: 720px) {
+            .dropdown-menu {left: 2rem; width: unset;}
+            .dropdown-menu li a {color: white; text-decoration: none; letter-spacing: 1px;}
+            .dropdown-menu li a:hover {color: white; text-decoration: underline;}
+            .judul h1 {margin-left: 50px; color: red; font-size: 30px; letter-spacing: 2px;}
+            .icon img {width: 80px; margin-right: 20px;}
+            .dropdown-menu li {border-bottom: 1px solid white;}
+            .subjudul {font-size: 20px;}
+            .isi p {font-size: 12px;}
+            #sts1 .foto img {width: 150px;}
+            #sts1 .foto {width: 150px; height: 150px;}
+            #sts1 .foto img:hover {transform: scale(1.35);}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <header>
+        <div class="judul">
+            <h1>Stranger Things</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <span class="s1"><img src="sts1.jpg"></span>
+                    <a href="s1.html">Season 1</a>
+                </li>
+                <li>
+                    <span class="s2"><img src="sts2.jpg"></span>
+                    <a href="s2.html">Season 2</a>
+                </li>
+                <li>
+                    <span class="s3"><img src="sts3.jpg"></span>
+                    <a href="s3.html">Season 3</a>
+                </li>
+                <li>
+                    <span class="s4"><img src="sts4.jpg"></span>
+                    <a href="s4.html">Season 4</a>
+                </li>
+                <li>
+                    <span class="home"><img src="homeicon.png"></span>
+                    <a href="index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+        <div class="icon">
+            <img class="menuicon" src="baricon.png" width="100px">
+        </div>
+
+        <div class="dropdown-menu">
+            <li>
+                <span class="s1"><img src="sts1.jpg"></span>
+                <a href="s1.html">Season 1</a>
+            </li>
+            <li>
+                <span class="s2"><img src="sts2.jpg"></span>
+                <a href="s2.html">Season 2</a>
+            </li>
+            <li>
+                <span class="s3"><img src="sts3.jpg"></span>
+                <a href="s3.html">Season 3</a>
+            </li>
+            <li>
+                <span class="s4"><img src="sts4.jpg"></span>
+                <a href="s4.html">Season 4</a>
+            </li>
+            <li>
+                <span class="home"><img src="homeicon.png"></span>
+                <a href="index.html">Home</a>
+            </li>
+        </div>
+    </header>
+
+<br><br><br>
+
+    <div id="sts1" class="season1">
+                <div class="isi">
+                    <br><br><br>
+                <h1 class="subjudul">Stranger Things Season 1</h1>
+                <br><br><br>
+                <div class="foto">
+                    <img src="sts1.jpg" alt="Stranger Things 1">
+                    </div>
+                <br><br>
+                    <p><strong>The Vanishing of Will Byers:</strong> Pada bulan November 1983 di Hawkins, Indiana. Seorang ilmuwan diserang oleh makhluk tak terlihat di laboratorium pemerintah Amerika Serikat. Will Byers yang berusia 12 tahun bertemu dengan makhluk itu dan menghilang secara misterius saat bersepeda pulang dari bermain Dungeons & Dragons (D&D) bersama teman-temannya yaitu Mike Wheeler, Dustin Henderson dan Lucas Sinclair. Ibu tunggal Will, Joyce Byers melaporkan telah kehilangan anaknya ke kepala polisi, Jim Hopper yang memulai pencarian dan meyakinkan Joyce bahwa hampir semua anak hilang dan cepat ditemukan. Direktur lab, Dr. Martin Brenner menyelidiki zat organik yang mengalir dari ruang bawah tanah lab, mengklaim bahwa "gadis itu" tidak mungkin pergi jauh. Seorang gadis muda gugup mengenakan gaun rumah sakit mengembara ke restoran lokal. Pemiliknya, Benny mengetahui dari tato "011" di lengannya bahwa namanya adalah Eleven. Brenner memantau saluran telepon, mengirim agen ke restoran setelah Benny menelepon layanan sosial. Agen membunuh Benny, tetapi Eleven berhasil melarikan diri menggunakan kemampuan telekinetik. Telepon Joyce korslet setelah menerima panggilan telepon misterius yang dia yakini dari Will. Saat mencari Will di hutan, Mike, Dustin dan Lucas bertemu dengan Eleven.</p>
+                    <br>
+                    <p><strong>The Weirdo on Maple Street:</strong> Anak-anak membawa Eleven ke rumah Mike, karena mereka tidak tau apa yang harus dilakukan. Mike menyusun rencana agar Eleven berpura-pura menjadi pelarian dan mencari bantuan dari ibunya, Karen. Tetap saja Eleven menolak, mengungkapkan bahwa "pria jahat" mengejarnya. Saudara laki-laki Will, Jonathan mengunjungi ayahnya, Lonnie di Indianapolis untuk mencari Will tetapi Lonnie tidak tau tentang dimana Will pergi. Tim pencari Hopper menemukan sobekan gaun rumah sakit di dekat lab. Eleven melihat foto Will, setelah mengenali Will dalam sebuah foto dan mendemonstrasikan telekinesisnya, Eleven meyakinkan para anak lelaki itu untuk mempercayainya, karena mereka yakin dia dapat menemukan Will. Menggunakan papan Dungeons & Dragons, Eleven menjelaskan bahwa Will berada di sisi papan "Upside Down" dan sedang diburu oleh "Demogorgon". Nancy dan temannya Barbara Holland pergi ke pesta pacar Nancy, Steve Harrington. Mencari Will di dekat rumah Steve, Jonathan diam-diam memotret pesta tersebut. Joyce menerima telepon lagi dari Will, mendengar musik diputar dari stereo-nya, dan melihat makhluk itu datang melalui dinding. Ditinggal sendirian di tepi kolam renang, Barb diserang oleh Demogorgon dan Barb menghilang secara misterius.</p>
+                    <br>
+                    <p><strong>Holly, Jolly:</strong> Barb terbangun di Upside Down: dimensi alternatif yang membusuk dan ditumbuhi banyak tumbuhan parasit. Dia mencoba untuk melarikan diri, tetapi diserang oleh Demogorgon dan Barb tiada di dimensi Upside Down. Joyce percaya Will berkomunikasi melalui bola lampu. Brenner membiarkan Hopper untuk melihat rekaman keamanan yang dipalsukan dari malam Will menghilang, membuat Hopper menyelidiki Brenner dan menemukan keterlibatannya dengan Proyek MKUltra, eksperimen CIA ke dalam potensi pencucian otak, penggunaan obat-obatan psikoaktif, dan mengetahui bahwa seorang wanita bernama Terry Ives bertahun bertahun-tahun sebelumnya menuduh bahwa Brenner mengambil putrinya. Eleven mengingat Brenner yang dia sebut "Papa," menghukumnya karena menolak untuk menyakiti kucing secara telekinetik. Steve menghancurkan kamera Jonathan setelah mengetahui bahwa dia mengambil gambar diam-diam di pesta sebelumnya. Nancy kemudian melihat foto Barb dan menyadari bahwa dia hilang. Kembali ke rumah Steve untuk menyelidiki, Nancy sekilas melihat Demogorgon tetapi berhasil melarikan diri. Joyce melukis papan alfabet di dindingnya dengan lampu Natal lalu Will datang untuk memberitaunya lewat lampu natal bahwa dia "TEPAT DI SINI" dan menyuruh Joyce untuk "BERLARI". Percaya Eleven tahu di mana Will, para anak lelaki memintanya untuk mengantar mereka kepada Will. Eleven membawa mereka ke rumah Will, sehingga mereka marah. Dari sana, mereka melihat dan mengikuti kendaraan darurat ke sebuah tambang, di mana mereka melihat mayat seperti Will.</p>
+                    <br>
+                    <p><strong>The Body:</strong> Joyce menolak untuk percaya bahwa mayat yang ditemukan di tambang itu adalah Will. Mike merasa dikhianati oleh Eleven sampai dia membuktikan bahwa Will masih hidup. Eleven menyalurkan suaranya melalui walkie-talkie Mike. Para anak lelaki berteori bahwa Eleven bisa menggunakan radio sekolah mereka untuk berkomunikasi dengan Will. Nancy memperhatikan sosok di belakang Barb di foto Jonathan, yang disadari Jonathan cocok dengan deskripsi ibunya tentang Demogorgon. Nancy memberi tahu polisi tentang hilangnya Barb, dia kemudian berkelahi dengan Steve. Hopper memiliki kecurigaan mengenai keaslian tubuh yang ditemukan di tambang ketika dia mengetahui bahwa petugas koroner yang ia kenal dikirim pulang. Hopper menemui polisi negara bagian yang menemukan Will dan memukulinya sampai dia mengakui bahwa dia diperintahkan untuk berbohong. Anak-anak menyelundupkan Eleven ke sekolah mereka untuk menggunakan radio, sementara Joyce mendengar suara Will di dinding ruang tamunya. Joyce merobek wallpaper dinding rumahnya dan dia melihatnya. Eleven menggunakan radio untuk membiarkan Will berbicara dengan ibunya. Hopper pergi ke kamar mayat dan menemukan bahwa tubuh yang mirip Will adalah boneka.</p>
+                    <br>
+                    <p><strong>The Flea and The Acrobat:</strong> Hopper mengelilingi lab dan menemukan zat di ruang bawah tanah, sebelum dihancurkan oleh penjaga lab. Para anak lelaki bertanya kepada guru sains mereka, Mr. Clarke apakah mungkin untuk melakukan perjalanan antar dimensi alternatif, yang dia jawab bahwa mungkin ada 'gerbang' teoretis antar dimensi. Hopper kemudian terbangun di rumahnya dan menemukan mikrofon tersembunyi, menyadari bahwa Joyce benar.Sepanjang waktu, anak-anak lelaki mengikuti kompas mereka, berharap sebuah gerbang akan mereka temukan. Eleven mengingat kenangan buruk bertemu dengan Demogorgon, hingga khawatir pertemuan berikutnya dengan Demogorgon. Hal itu membuat Eleven mengubah arah kompas. Lucas salah mengartikan hal tersebut dan marah dan hal itu membuat Mike dan Lucas berkelahi sehingga Eleven secara telekinetik melempar Lucas dari Mike. Sementara Dustin dan Mike mendatangi Lucas yang tidak sadarkan diri dan Eleven kabur. Nancy dan Jonathan menyusun rencana untuk membunuh Demogorgon. Mencari di hutan, mereka menemukan rusa yang terluka. Nancy mengikutinya dan ia berhasil masuk ke gerbang Upside Down.</p>
+                    <br>
+                    <p><strong>The Monster:</strong> Nancy berteriak mencari Jonathan dan Jonathan berhasil menemukan Nancy dan sgera menarik Nancy keluar dari gerbang Upside Down. Malam itu, Nancy takut sendirian dan meminta Jonathan untuk tinggal di kamarnya. Steve mencoba untuk berdamai dengan Nancy, melihat mereka bersama melalui jendela kamar tidur Nancy dan menganggap mereka berkencan. Joyce dan Hopper melacak Terry Ives, yang katatonik dan dirawat oleh saudara perempuannya Becky. Yang menjelaskan bahwa Terry adalah peserta Proyek MKUltra saat hamil tanpa disadari, dan percaya Brenner menculik putrinya, Jane saat lahir karena kemampuan telekinetik dan telepatinya. Nancy dan Jonathan menyiapkan senjata untuk membunuh Demogorgon. Steve terlibat perkelahian dengan Jonathan setelah Steve menyebut Nancy pelacur. Eleven masuk ke toko kelontong dan mencuri beberapa kotak Wafel. Mencari Eleven, Mike dan Dustin disergap oleh sekelompok pembully tetapi diselamatkan oleh Eleven. Eleven pingsan dan mengingat bahwa ia diminta oleh Brenner untuk menghubungi Demogorgon dan dalam ketakutannya, secara tidak sengaja membuka gerbang "Upside Down". Dia menangis dan mengakui hal itu kepada Mike, bahwa dia bertanggung jawab untuk membiarkan Demogorgon memasuki dimensi ini. Lucas melihat agen yang telah melacak Eleven bersiap untuk menyergap rumah Mike.</p>
+                    <br>
+                    <p><strong>The Bathtub:</strong> Lucas memperingatkan Mike bahwa agen sedang mencari Eleven. Mike, Dustin dan Eleven melarikan diri dari rumah. Eleven menggunakan telekinetik untuk membalik salah satu mobil agen yang menghalangi jalan mereka, dan merekapun berhasil melarikan diri. Lucas berdamai dengan Mike dan Eleven, dan anak-anak bersembunyi dari agen. Nancy dan Jonathan mengungkapkan pengetahuan mereka tentang Demogorgon kepada Joyce dan Hopper. Mereka kemudian menghubungi para anak-anak, dan semuanya bertemu di rumah keluarga Byers. Joyce dan Hopper menyadari bahwa Eleven adalah Jane Ives. Kelompok tersebut meminta Eleven untuk mencari Will dan Barb secara telepati. Mereka pergi ke sekolah dan membuat kolam darurat untuk memperkuat kekuatan Eleven. Eleven menemukan Barb mati dan Will masih hidup, bersembunyi di versi Upside Down dari benteng halaman belakang rumahnya. Menyadari bahwa gerbang berada di ruang bawah tanah lab, Hopper dan Joyce masuk ke lab, tetapi ditangkap oleh penjaga keamanan. Nancy dan Jonathan kembali ke rumah Byers, berencana untuk memancing dan membunuh Demogorgon, agar tidak mengganggu Joyce dan Hopper. Di Upside Down, Demogorgon menemukan benteng Will.</p>
+                    <br>
+                    <p><strong>The Upside Down:</strong> Hopper dihantui oleh kematian putrinya, Sara yang meninggal karena kanker beberapa tahun sebelumnya. Ia menyerahkan lokasi Eleven kepada Brenner, yang sebagai gantinya membiarkan Hopper dan Joyce memasuki Upside Down untuk menyelamatkan Will. Nancy dan Jonathan menyayat mengeluarkan darah dari tangan mereka untuk menarik perhatian Demogorgon ke rumah keluarga Byers. Steve, berniat untuk meminta maaf kepada Jonathan tentang perkelahian mereka dan ia tiba tepat saat Demogorgon muncul. Steve, Nancy dan Jonathan melawan Demogorgon. Sementara itu, Eleven dan anak laki-laki bersembunyi di sekolah ketika Brenner dan agennya tiba untuk mengambil kembali Eleven dan lokasi Eleven ditemukan lalu Eleven marah hingga ia membunuh sebagian besar dari agen sebelum akhirnya pingsan karena kelelahan. Demogorgon muncul dan menyerang Brenner. Hopper dan Joyce menemukan Will di Upside Down yang sudah tidak sadarkan diri dengan sulur di tenggorokannya. Mereka menghidupkannya Will kembali dengan cara RJP. Demogorgon menemukan para anak-anak dan Eleven menghancurkan Demogorgon tetapi ia menghilang. Satu bulan kemudian, Nancy kembali bersama Steve, dan keduanya berteman dengan Jonathan. Will batuk dan makhluk seperti siput keluar dari mulutnya, tapi ia menyembunyikan ini dari keluarganya.</p>
+                    <br>
+                </div>
+    </div>
+
+    <script>
+        const icon = document.querySelector('.icon')
+        const menuicon = document.querySelector('.menuicon')
+        const dropdownMenu = document.querySelector('.dropdown-menu')
+
+        icon.onclick = function() {
+            dropdownMenu.classList.toggle('open')
+            const isOpen = dropdownMenu.classList.contains('open')
+        }
+    </script>
+</body>
+</html>

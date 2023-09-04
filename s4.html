@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranger Things Season 3</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        body { background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(sts4.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; background-attachment: fixed;}
+        .container {width: 100%; height: 100%;}
+        header {position: fixed; width: 100%; height: 100px; background: #471b1780; border-bottom: 2px solid #3750a1; display: flex; align-items: center; justify-content: space-between; z-index: 1;}
+        .judul {padding-left: 90px;}
+        .judul h1 {color: red; font-size: 50px; letter-spacing: 2px;}
+        marquee h1 {color: rgb(182, 182, 182); text-shadow: 0 0 5px black;}
+        .isi {width: 79%; text-align: justify; padding: 5%; margin-left: 10%;}
+        .isi p {color: rgb(182, 182, 182); letter-spacing: 1px;}
+        #sts4 {padding-top: 10%;}
+
+        /*Menu*/
+        .menu {display: contents; position: fixed;}
+        ul {height: auto; padding: 5%; position: fixed; left: 0; margin-top: 49%;}
+        ul li {display: block; text-align: center; padding: 1%; height: 90px; width: 100%;}
+        ul li a {text-decoration: none; font-size: 18px; color: white;}
+        ul li a:hover {text-decoration: underline;}
+        ul li a:active, :focus {color: #a4342a;}
+        ul li span {display: block; text-align: center;}
+        ul li span img {width: 50px; border: 2px solid red;}
+
+        /*Hover Pict*/
+        #sts4 .foto img {width: 250px; transition: 1s;}
+        #sts4 .foto {margin-left: auto; margin-right: auto; float: left; width: 250px; height: 250px; border: 6px double #892724; padding: 30px; margin-right: 9px;}
+        #sts4 .foto img:hover {transform: scale(1.2); transition: 1s;}
+        .foto{display: block;}
+        .bawah{display: none;}
+    
+        /*Dropdown Menu*/
+        .icon img {cursor: pointer; display: none; float: right; padding-right: 45px;}
+        .dropdown-menu {position: absolute; right: 2rem; top: 90px; height: 0; width: 300px; background: rgba(0, 0, 0, 0.3); border-radius: 15px; backdrop-filter: blur(5px); overflow: hidden; transition: 2s;}
+        .dropdown-menu.open {height: 345px;}
+        .dropdown-menu ul {margin: 0; padding: 0; left: 0;}
+        .dropdown-menu li {display: flex; align-items: center; height: auto; padding: 5%; margin-left: 80px;}
+        .dropdown-menu li a {color: white; text-decoration: none; letter-spacing: 1px;}
+        .dropdown-menu li a:hover {color: red; text-decoration: underline;}
+        .dropdown-menu li span img {border-radius: 5px; width: 40px; margin-right: 20px; border: 1px solid red;}
+
+        @media (max-width:950px) {
+            .menu {display: none;}
+            .icon img {display: block;}
+            .dropdown-menu {display: block;}
+            .isi {width: unset; margin: unset;}
+            .isi p {font-size: 15px;}
+            #sts4 .foto img {width: 220px;}
+            #sts4 .foto img:hover {border-radius: 13%; transform: scale(1.23);}
+            #sts4 .foto {width: 220px; height: 220px; border-radius: 15%; float: unset; margin: auto;}
+            .foto{display: none;}
+            .bawah{display: block;}
+        }
+
+        @media (max-width:700px) {
+            body {background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(bgs4.jpeg);}
+            .dropdown-menu li a:hover {color: blue; text-decoration: underline;}
+            header {height: 70px;}
+            .judul h1 {color: red; font-size: 30px; letter-spacing: 2px; width: unset;}
+            .icon img {width: 80px; margin-right: 20px;}
+            marquee h1 {font-size: 25px; padding-top: 3px; padding-bottom: 5px;}
+            #sts4 .foto img {width: 150px;}
+            #sts4 .foto {width: 150px; height: 150px;}
+            #sts4 .foto img:hover {transform: scale(1.34)}
+            .isi p {font-size: 14px;}
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="judul">
+            <h1>Stranger Things</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <span class="s1"><img src="sts1.jpg"></span>
+                    <a href="s1.html">Season 1</a>
+                </li>
+                <li>
+                    <span class="s2"><img src="sts2.jpg"></span>
+                    <a href="s2.html">Season 2</a>
+                </li>
+                <li>
+                    <span class="s3"><img src="sts3.jpg"></span>
+                    <a href="s3.html">Season 3</a>
+                </li>
+                <li>
+                    <span class="s4"><img src="sts4.jpg"></span>
+                    <a href="s4.html">Season 4</a>
+                </li>
+                <li>
+                    <span class="home"><img src="homeicon.png"></span>
+                    <a href="index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+        <div class="icon">
+            <img class="menuicon" src="baricon.png" width="100px">
+        </div>
+
+        <div class="dropdown-menu">
+            <ul>
+                <li>
+                    <span class="s1"><img src="sts1.jpg"></span>
+                    <a href="s1.html">Season 1</a>
+                </li>
+                <li>
+                    <span class="s2"><img src="sts2.jpg"></span>
+                    <a href="s2.html">Season 2</a>
+                </li>
+                <li>
+                    <span class="s3"><img src="sts3.jpg"></span>
+                    <a href="s3.html">Season 3</a>
+                </li>
+                <li>
+                    <span class="s4"><img src="sts4.jpg"></span>
+                    <a href="s4.html">Season 4</a>
+                </li>
+                <li>
+                    <span class="home"><img src="homeicon.png"></span>
+                    <a href="index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <div id="sts4" class="season4">
+            <div class="isi">
+            <marquee><h1>Stranger Things Season 4</h1></marquee>
+                <br><br><br>
+                <div class="foto">
+                    <img src="sts4.jpg" alt="Stranger Things 4">
+                </div>
+                <br><br>
+                <p><strong>Suzie, Do You Copy ?:</strong> Pada bulan Juni 1984, para ilmuwan dari Soviet berusaha untuk memaksa membuka gerbang baru yang menuju ke Upside Down. Satu tahun kemudian, di Hawkinsterdapat Starcourt Mall yang popular, mengharuskan banyak bisnis lokal tutup. Hal tersebutmembuat marah warga kota.marah. Mike dan Eleven telah memulai hubungan romantis, yang membuat Hopper kecewa karena Eleven menjadi pembangkang.Kemudian Hopper mengancam Mike untuk tidak menemui Eleven. Dustin kembali dari perkemahan musim panas dan meminta bantuan kepada teman temannya untuk mendirikan menara radio agar bisa menghubungi pacar barunya yang bernama Suzie, di mana teman-temannya tidak mempercayainya. Tetapi, Dustin justru mencegat transmisi Rusia. Will secara pribadi merasakan bahwa Mind Flayer mungkin masih hidup dan akan kembali. Kemudian tikus-tikus berkumpul di pabrik kosong dan tiba tiba meledak menjadi massa organic yang menjijikan. Dalam perjalanan menuju pertemuannya dengan Mrs Wheeler, Billy hulang kendali saat naik mobil menuju rumah Mrs Wheeler karena dia melihat sosok misterius. Setelah itu Billy segera keluar dari mobil dan mencari sosok misterius itu tetapi ia tiba tiba terseret ke dalam pabrik kosong tersebut.</p>
+                <br>
+                <p><strong>The Mall Rats:</strong> Billy mencoba melarikan diri dari gudang kosong tadi setelah makhluk itu memperlihatkan Upside Down kepadanya, di mana ia bertemu dengan seorang doppelgänger. Tersiksa oleh penglihatan dan suara tersebut, Billy kemudian dipandu oleh makhluk itu untuk menculik rekan penjaga pantainya yang bernama Heather Holloway dan membawanya ke makhluk misterius itu. Nancy dan Jonathan, bekerja sebagai magang di Hawkins Post. Mereka menyelidiki rumah Mrs. Driscoll, seorang wanita tua yang khawatir tentang tikus gila yang memakan pupuknya . Max dan Eleven bersatu untuk mengalihkan perhatian mereka dari Mike dan Lucas saat berbelanja di Starcourt karena Eleven sudah putus dengan Mike. Joyce menyelidiki hilangnya magnet yang aneh di antara benda-benda di rumah dan tempat kerjanya, yang secara tidak sengaja membuatnya kencan dengan Hopper. Dustin bertemu kembali dengan Steve,yang sedang bekerja di toko es krim mal dengan Robin, mantan teman sekelas Steve. Mereka bertiga menerjemahkan pesan radio Rusia dan mereka yakini bahwa itu pasti sebuah kode rahasia.</p>
+                <br>
+                <p><strong>The Case of the Missing Lifeguard:</strong> Eleven menggunakan kekuatannya untuk memata-matai Mike dan kemudian Billy, yang merasakan kehadirannya. Dia dan Max mengetahui bahwa Billy telah hilang. Nancy dan Jonathan menemukan laporan tentang pupuk yang hilang dan perilaku aneh di antara tikus di seluruh kota dan mereka menemukan Mrs. Driscoll sendiri memakan pupuk di rumahnya. Will berkelahi dengan Lucas dan Mike saat mereka kesal karena Eleven dan Max. Robin menerjemahkan komunikasi Rusia, mengarahkan ke kiriman yang tiba di Starcourt malam itu. Robin, Steve dan Dustin melihat tentara Rusia bersenjata melakukan pengiriman. Joyce meyakinkan Hopper bahwa demagnetisasi berasal dari perangkat elektromagnetik di Hawkins Lab yang ditinggalkan. Ketika mereka menyelidiki, Hopper diserang oleh Grigori, seorang tentara Rusia. Max dan Eleven mencari Billy dan Heather di rumah orang tua Heather. Setelah Eleven dan Max pergi, Billy dan Heather menaklukkan orang tua Heather, hingga Will merasakannya, membuatnya menyadari Mind Flayer masih hidup.</p>
+                <br>
+                <p><strong>The Sauna Test:</strong> Billy dan Heather membawa orang tuanya ke pabrik, di mana mereka dirasuki oleh monster Mind Flayer. Hopper mengingat pertemuan Grigori dengan walikota Larry Kline, dia dan Joyce memaksa Kline untuk mengungkapkan bahwa Starcourt Mall adalah markas Rusia. Orang Rusia tersebut yang telah membeli properti terbengkalai di Hawkins. Di Starcourt, Dustin, Steve dan Robin bersama saudara perempuan Lucas, Erica menemukan bahwa dok pemuatan mal adalah lift, yang ada di bawah mal. Nancy dan Jonathan dipecat oleh bos mereka karena menentang kebijakan kantor. Nancy mengunjungi Mrs. Driscoll di rumah sakit karena curiga dan Nancy melihat Mrs. Driscoll dirasuki oleh Mind Flayer. Will mengungkapkan hubungannya dengan Mind Flayer kepada Mike, Lucas, Eleven dan Max. Mereka berspekulasi bahwa hal itu telah merasuki Billy. Mereka menyusun rencana untuk menjebak Billy di sauna kolam untuk memastikan bahwa dia kerasukan. Dan benar, Billy telah kerasukan oleh Mind Flayer. Eleven menyerang Billy untuk menyelamatkan diri dan teman temannya. Setelah itu Billy melarikan diri. Billy kembali ke gudang, di mana lusinan warga kota telah dirasuki oleh Mind Flayer.</p>
+                <br>
+                <p><strong>The Flayed:</strong> Steve, Robin, Dustin, dan Erica terjebak di dalam lift yang terjatuh. Hopper dan Joyce mencari salah satu properti yang ditinggalkan dan mereka menemukan laboratorium tersembunyi. Grigori datang untuk membunuh mereka, dan mereka berhasil melarikan diri dengan seorang sandera seorang ilmuwan dari Rusia yang bernama Alexei. Mencoba menemukan sinyal radio untuk komunikasi, Steve dan kawan kawan malah menemukan area pengujian besar di mana para ilmuwan mencoba membuka paksa portal ke Upside Down. Karena Alexei tidak bisa berbahasa Inggris, Hopper dan Joyce membawanya ke Murray, satu-satunya penutur bahasa Rusia yang mereka tahu. Grigori mencoba mengikuti mereka tetapi kehilangan jejak. Nancy dan Jonathan berkumpul kembali dengan Will, Mike, Lucas, Eleven dan Max, kemudian mereka berteori bahwa Billy dan Driscoll sama-sama dirasuki oleh Mind Flayer, yang menggunakannya untuk "menguliti" orang untuk membuat kawanan. Mereka memutuskan untuk mengunjungi Driscoll di rumah sakit untuk mempelajari lebih lanjut, tetapi dia tiba tiba hilang. Mereka diserang oleh Tom dan Bruce, yang sekarang menjadi Flayed yang larut menjadi satu massa organik yang menyerupai Mind Flayer setelah Nancy dan Jonathan membunuh mereka.</p>
+                <br>
+                <p><strong>E Pluribus Unum:</strong> Eleven telah berdamai dengan Mike. Dia menggunakan kekuatannya untuk melumpuhkan Mind Flayer yang menyerang Nancy. Di lab Rusia di bawah Starcourt, Steve dan Robin ditangkap, dibius dan diinterogasi. Tetapi Dustin dan Erica berhasil menyelamatkan mereka. Dengan terjemahan Murray, Hopper dan Joyce menyandera Alexei, memaksanya untuk mengungkapkan bahwa Rusia berusaha mengakses Upside Down dan mereka membuka portal di bawah Starcourt. Hopper memanggil Owens untuk memperingatkan Pemerintah AS tentang ancaman tersebut. Grigori menyudutkan Kline di Hari Kemerdekaan Hawkins, menuntut dia meningkatkan upaya untuk menemukan Hopper. Untuk menemukan Mind Flayer, Eleven menggunakan kekuatannya untuk berkomunikasi secara psikis dengan Billy, mempelajari masa kecilnya yang bermasalah. Tetapi Billy merasakan kehadiran Eleven. Billy memberikan akses kepada Mind Flayer lokasi Eleven, dan mengungkapkan bahwa Mind Flayer berencana membunuhnya untuk membalaskan dendamnya karena menutup gerbang. Flayed berkumpul di gudang kosong, larut menjadi massa organik dan menyatu dengan Mind Flayer.</p>
+                <br>
+                <p><strong>The Bite:</strong> Will merasakan Mind Flayer mendekat, dan benar. Mind Flayer menyerang dan melukai kaki Eleven sebelum mereka berhasil melarikan diri. Dustin dan Erica menyeret Steve dan Robin yang terbius ke bioskop di Starcourt. Teman teman Eleven masuk ke supermarket untuk membantu mengobati luka-lukanya dan mengumpulkan lebih banyak persediaan. Dustin menghubungi mereka melalui walkie-talkie untuk mencoba menjelaskan situasinya sebelum dia kehilangan daya baterai. Eleven menggunakan kekuatannya untuk menemukan Dustin, dan mereka itu pergi ke mal. Steve mengakui bahwa dia memiliki perasaan untuk Robin, tapi Robin mengaku kepada Steve bahwa dia seorang lesbian. Hopper, Joyce, Murray, dan Alexi menuju ke tempat pekan raya di Hawkins untuk menemukan anak-anak, di mana mereka ditemukan oleh Kline. Grigori menembak mati Alexei di depan Murray. Murray, Hopper, dan Joyce menghindari beberapa agen Soviet dan mengetahui bahwa agen tersebut mencari anak-anak di mal. Eleven dan teman teman tiba di mal pada waktunya untuk menghentikan tim Rusia menembak Dustin dkk. Eleven pingsan dan lukanya berdenyut seperti ada sesuatu di dalamnya.</p>
+                <br>
+                <p><strong>The Battle of Starcourt:</strong> Jonathan mencoba mencongkel luka Eleven yang didalamnya ada potongan Mind Flayer, itu yang membuat lukanya berdenyut. Tetapi usaha Jonathan tidak berhasil dan Eleven berhasil melepaskan potongan Mind Flayer yang tertanam di lukanya. Hopper tiba, dan rencana dibuat untuk membawa Eleven dan temannya ke tempat yang aman. Pada saat yang sama, Hopper, Joyce, dan Murray menghancurkan mesin, dengan Dustin dan Erica menavigasi mereka dari menara radionya. Billy dan Mind Flayer menjebak kelompok Eleven di mal. Yang lain menyerang Mind Flayer dengan kembang api, saat Eleven membebaskan Billy dari kendalinya. Billy mengorbankan dirinya untuk melindungi Eleven, Mike dan Max. Hopper bertarung dan membunuh Grigori, tetapi terjebak dengan mesin. Kehabisan waktu, Joyce dipaksa untuk memicu ledakan dan menutup gerbang, dengan Hopper tampaknya hancur dalam prosesnya. Tubuh fisik Mind Flayer mati saat Dr. Owens tiba dengan pasukan militer. Tiga bulan kemudian, kematian ditutupi, Starcourt dihancurkan dan Kline yang dipermalukan ditangkap. Keluarga Byers dan Eleven yang masih tak berdaya bersiap untuk pindah dari Hawkins. Mike dan Eleven mengakui cinta mereka satu sama lain dan membuat rencana untuk bertemu di Thanksgiving. Di Kamchatka, penjaga Rusia diperintahkan untuk memberi makan seorang tahanan, tetapi "bukan orang Amerika", melainkan untuk Demogorgon yang ditangkap oleh mereka.</p>
+                <div class="foto bawah">
+                    <img src="sts4.jpg" alt="Stranger Things 4">
+                </div>
+            </div>
+    </div>
+</div>
+
+    <script>
+        const icon = document.querySelector('.icon')
+        const menuicon = document.querySelector('.menuicon')
+        const dropdownMenu = document.querySelector('.dropdown-menu')
+
+        icon.onclick = function() {
+            dropdownMenu.classList.toggle('open')
+            const isOpen = dropdownMenu.classList.contains('open')
+        }
+    </script>
+
+</body>
+</html>
